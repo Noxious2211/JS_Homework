@@ -4,23 +4,23 @@
 //     Запросить у пользователя x и n, а затем вывести результат pow(x,n).
 //     В этой задаче функция обязана поддерживать только натуральные значения n, т.е. целые от 1 и выше.
 
-// function pow(x, n) {
-//    var result = x;
+function pow(x, n) {
+   var result = x;
 
-//    for (i = 1; i < n; i++) {
-//       result *= x;
-//    }
-//    return result;
-// }
+   for (i = 1; i < n; i++) {
+      result *= x;
+   }
+   return result;
+}
 
-// var valueX = prompt('Введите число');
-// var valueN = prompt('Введите степень, в которую нужно возвести число');
+var valueX = prompt('Введите число');
+var valueN = prompt('Введите степень, в которую нужно возвести число');
 
-// while (valueN < 1) {
-//    alert('Степень ' + valueN + '  не поддерживается, используйте натуральное число (от 1 и выше)');
-//    valueN = prompt('Введите степень, в которую нужно возвести число');
-// }
-// alert(pow(valueX, valueN));
+while (valueN < 1) {
+   alert('Степень ' + valueN + '  не поддерживается, используйте натуральное число (от 1 и выше)');
+   valueN = prompt('Введите степень, в которую нужно возвести число');
+}
+alert(pow(valueX, valueN));
 
 
 //   Задание 2:
@@ -43,37 +43,34 @@
 
 //ЦИКЛ 
 
-// function sumTo(n) {
-//    var n = prompt('Введите число');
-//    var sum = 0;
-//    for (var i = 1; i <= n; i++) {
-//       sum += i;
-//    }
-//    return sum;
-// }
+function sumTo(n) {
+   var n = prompt('Введите число');
+   var sum = 0;
+   for (var i = 1; i <= n; i++) {
+      sum += i;
+   }
+   return sum;
+}
 
-// alert(sumTo());
+alert(sumTo());
 
 // РЕКУРСИЯ
 
 function sumTo(n) {
    if (n === 1) {
       return 1
-   } else {
-      return n + sumTo(n - 1);
-   }
+   } return n + sumTo(n - 1);
 }
+
 alert(sumTo(9999));
-
-
 
 //  ФОРМУЛА
 
-// function sumTo(n) {
-//    return n * (n + 1) / 2;
-// }
+function sumTo(n) {
+   return n * (n + 1) / 2;
+}
 
-// alert(sumTo(4));
+alert(sumTo(4));
 
 //   Задание 3:
 //     Разработать функцию treeSum, которая будет принимать массив, элементы которого могут быть числами или снова массивами,
