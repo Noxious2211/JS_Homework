@@ -254,6 +254,7 @@ nav .nav__menu_item {
 }
 .main .main__content {
   width: 720px;
+  padding-bottom: 20px;
 }
 .main .main__content .main__content-header {
   display: flex;
@@ -475,7 +476,6 @@ nav .nav__menu_item {
   display: flex;
   flex-direction: column;
   position: fixed;
-  right: 92px;
   bottom: 0;
   width: 100%;
 }

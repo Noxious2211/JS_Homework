@@ -260,6 +260,7 @@ nav {
    }
    .main__content {
       width: 720px;
+      padding-bottom: 20px;
       .main__content-header {
          display: flex;
          padding: 20px 0px 0px 40px;
@@ -483,7 +484,6 @@ nav {
    display: flex;
    flex-direction: column;
    position: fixed;
-   right: 92px;
    bottom: 0;
    width: 100%;
    .footer__nav {
