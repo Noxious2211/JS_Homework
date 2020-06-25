@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import '../css/normalize.css';
 body {
+  overflow-x: hidden;
   background-color: #f2f4f8;
 }
 
@@ -515,7 +516,7 @@ nav .nav__menu_item {
   color: #99a1b3;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   header .header__mobile-wr {
     display: block;
   }
