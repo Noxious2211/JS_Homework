@@ -167,7 +167,7 @@ header .header .header__input {
   border-radius: 5px;
 }
 header .header .header__input-active {
-  display: inline-block;
+  display: block;
   width: 150px;
   height: 14px;
   border: solid #d6d9e1 1px;
@@ -486,7 +486,7 @@ nav .nav__menu_item {
 }
 .footer .footer__nav-list {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   margin: 0;
   padding: 10px 20px;
 }
@@ -505,7 +505,7 @@ nav .nav__menu_item {
 }
 .footer .footer__info {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   padding: 15px 40px;
   background-color: #f2f4f8;
 }

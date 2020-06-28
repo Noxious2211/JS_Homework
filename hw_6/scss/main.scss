@@ -135,12 +135,6 @@ header {
       ul li {
          list-style-type: none;
       }
-      // .fa-bell::before {
-      //    content: '\f0f3';
-      // }
-      // .fa-envelope::before {
-      //    content: '\f0e0';
-      // }
       .fas {
          font-size: 18px;
          color: #646d81;
@@ -175,12 +169,11 @@ header {
          border-radius: 5px;
       }
       .header__input-active {
-         display: inline-block;
+         display: block;
          width: 150px;
          height: 14px;
          border: solid #d6d9e1 1px;
          border-radius: 5px;
-
       }
    }
 }
@@ -496,7 +489,7 @@ nav {
    }
    .footer__nav-list {
       display: flex; 
-      justify-content: center;
+      justify-content: flex-start;
       margin: 0;
       padding: 10px 20px;
       a {
@@ -515,7 +508,7 @@ nav {
    } 
    .footer__info {
       display: flex;
-      justify-content: center;
+      justify-content: flex-start;
       padding: 15px 40px;
       background-color: #f2f4f8;
       span {
