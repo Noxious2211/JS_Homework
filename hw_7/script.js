@@ -35,7 +35,7 @@ function Cat(name) {
 
    var self = this;
 
-   self.animalFeed = this.feed;
+   // self.animalFeed = this.feed;
    self.animalFeed = function () {
       this.feed();
       console.log('кот доволен ^_^');
