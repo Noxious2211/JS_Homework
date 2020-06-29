@@ -17,7 +17,6 @@ function Animal(name) {
 
    this.feed = function () {
       console.log('Насыпаем в миску ' + formatFoodAmount() + ' корма');
-      // console.log('кот доволен ^_^');
    };
 }
 
@@ -35,7 +34,6 @@ function Cat(name) {
 
    var self = this;
 
-   // self.animalFeed = this.feed;
    self.animalFeed = function () {
       this.feed();
       console.log('кот доволен ^_^');
