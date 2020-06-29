@@ -562,7 +562,17 @@ nav {
       }
    }
 }
-@media screen and (min-width: 501px) {
-
+@media screen and (max-width: 380px) {
+   .main {
+      .main__content{
+         .main__content-container {
+            .content-title-info {
+               .p1 {
+                  span{margin: 0;}
+                  }
+               }
+            }       
+         .main__content-item {display: none;}
+      }
+   }
 }
-

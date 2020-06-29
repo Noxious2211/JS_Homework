@@ -556,5 +556,13 @@ nav .nav__menu_item {
     width: 110px;
   }
 }
+@media screen and (max-width: 380px) {
+  .main .main__content .main__content-container .content-title-info .p1 span {
+    margin: 0;
+  }
+  .main .main__content .main__content-item {
+    display: none;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
