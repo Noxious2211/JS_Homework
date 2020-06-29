@@ -1,7 +1,6 @@
 @charset "UTF-8";
 @import '../css/normalize.css';
 body {
-  overflow-x: hidden;
   background-color: #f2f4f8;
 }
 
@@ -253,6 +252,7 @@ nav .nav__menu_item {
   color: #000;
 }
 .main .main__content {
+  position: relative;
   width: 720px;
   padding-bottom: 20px;
 }
@@ -476,7 +476,7 @@ nav .nav__menu_item {
 .footer {
   display: flex;
   flex-direction: column;
-  position: fixed;
+  position: absolute;
   bottom: 0;
   width: 100%;
 }
@@ -516,6 +516,14 @@ nav .nav__menu_item {
   color: #99a1b3;
 }
 
+@media screen and (max-width: 700px) {
+  header .header .header__user {
+    width: 70%;
+  }
+  header .header ul li {
+    margin-right: 20px;
+  }
+}
 @media screen and (max-width: 600px) {
   header .header__mobile-wr {
     display: block;
@@ -554,6 +562,16 @@ nav .nav__menu_item {
   .main .main__content .main__content-header select {
     font-size: 20px;
     width: 110px;
+  }
+}
+@media screen and (min-width: 500px) {
+  body {
+    overflow-x: hidden;
+  }
+}
+@media screen and (max-width: 500px) {
+  .main .main__content .main__content-container .main__content-title {
+    min-width: 445px;
   }
 }
 @media screen and (max-width: 380px) {

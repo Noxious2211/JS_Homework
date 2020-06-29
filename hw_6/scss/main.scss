@@ -1,6 +1,5 @@
 @import '../css/normalize.css';
 body {
-   overflow-x: hidden;
    background-color: #f2f4f8;
 }
 
@@ -256,6 +255,7 @@ nav {
        }
    }
    .main__content {
+      position: relative;
       width: 720px;
       padding-bottom: 20px;
       .main__content-header {
@@ -480,7 +480,7 @@ nav {
 .footer {
    display: flex;
    flex-direction: column;
-   position: fixed;
+   position: absolute;
    bottom: 0;
    width: 100%;
    .footer__nav {
@@ -519,6 +519,17 @@ nav {
       }
    }
 }
+@media screen and (max-width: 700px) {
+   header {
+      .header {
+         .header__user {width: 70%;}
+         ul {
+            li {margin-right: 20px;}
+         }
+      }
+   }
+}
+
 
 @media screen and (max-width: 600px) {
    header{
@@ -562,6 +573,21 @@ nav {
       }
    }
 }
+@media screen and (min-width: 500px) {
+   body {overflow-x: hidden;}
+}
+
+@media screen and (max-width: 500px) {
+
+   .main {
+      .main__content {
+         .main__content-container {
+            .main__content-title {min-width: 445px;}
+         }
+      }
+   }  
+}
+
 @media screen and (max-width: 380px) {
    .header {
       .header__logo {margin-left: 60px;}
