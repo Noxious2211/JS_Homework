@@ -33,13 +33,14 @@ function Cat(name) {
 
    this.name = name;
 
-   var animalFeed = this.feed;
-   this.feed = function () {
-      animalFeed();
-      console.log('кот доволен ^_^');
+   var self = this;
 
+   self.animalFeed = this.feed;
+   self.animalFeed = function () {
+      this.feed();
+      console.log('кот доволен ^_^');
    }
 }
 var cats = new Cat('tom');
 console.log(cats.name);
-console.log(cats.feed());
+console.log(cats.animalFeed());
