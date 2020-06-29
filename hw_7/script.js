@@ -32,6 +32,10 @@ function Cat(name) {
 
    this.name = name;
 
+   this.stroke = function () {
+      console.log('гладим кота');
+   }
+
    var self = this;
 
    self.animalFeed = function () {
@@ -42,3 +46,5 @@ function Cat(name) {
 var cats = new Cat('tom');
 console.log(cats.name);
 console.log(cats.animalFeed());
+
+console.log(cats.stroke());
