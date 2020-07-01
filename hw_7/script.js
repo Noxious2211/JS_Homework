@@ -15,36 +15,28 @@ function Animal(name) {
    };
    this.name = name;
 
+   var self = this;
    this.feed = function () {
-      console.log('Насыпаем в миску ' + formatFoodAmount() + ' корма');
+      console.log('Насыпаем в миску ' + self.dalyNorm() + ' корма');
    };
 }
 
-var barsik = new Animal('Барсик');
-console.log(barsik.name);
-
-console.log(barsik.dalyNorm(250));
-console.log(barsik.feed());
-
-
 function Cat(name) {
-   Animal.call(this);
+   Animal.apply(this, arguments);
 
-   this.name = name;
+   var animalFeed = this.feed;
+   this.feed = function () {
+      animalFeed();
+      console.log('кот доволен ^_^');
+      return this;
+   }
 
    this.stroke = function () {
       console.log('гладим кота');
-   }
-
-   var self = this;
-
-   self.animalFeed = function () {
-      this.feed();
-      console.log('кот доволен ^_^');
+      return this;
    }
 }
-var cats = new Cat('tom');
-console.log(cats.name);
-console.log(cats.animalFeed());
 
-console.log(cats.stroke());
+var barsik = new Cat('Барсик');
+console.log(barsik.feed().stroke().stroke().feed());
+barsik = null;
